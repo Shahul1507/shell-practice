@@ -2,6 +2,12 @@
 
 echo "please enter username::"
 
-read USERNAME #takes input into username variable
+read -s USERNAME #takes input into username variable
 
 echo "Username entered is :: $USERNAME"
+
+echo "please enter password"
+
+read -s PASSWORD
+
+echo "Password entered is :: $PASSWORD"
