@@ -2,7 +2,7 @@
 
 echo "please enter username::"
 
-read -s USERNAME #takes input into username variable
+read -s USERNAME #takes input into username variable # (-s) Hides the variable 
 
 echo "Username entered is :: $USERNAME"
 
