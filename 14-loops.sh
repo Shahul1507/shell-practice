@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NUMBERS= $1 to $10
 
-ech0 "1 $1"
+
+ech0 "1"
 ech0 "2"
 ech0 "3"
 ech0 "4"
