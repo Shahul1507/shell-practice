@@ -1,8 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
-
-echo "user id is : $USERID"
+#echo "User ID is: $USERID"
 
 if [ $USERID -ne 0 ]
 then
@@ -10,7 +9,7 @@ then
     exit 1
 fi
 
-dnf list installed git  # Just checking whether installed or not
+dnf list installed git # Just checking whether installed or not
 
 if [ $? -ne 0 ]
 then
@@ -23,26 +22,23 @@ then
     else
         echo "Git installation is success"
     fi
-else 
-    echo "git is already installed , nothing to do"
-
+else
+    echo "Git is already installed, nothing to do.."
 fi
 
-
-
-dnf list installed mysql
+dnf list installed mysql 
 
 if [ $? -ne 0 ]
-then 
-    echo "mysql not installed ,going to install it.."
-    dnf install mysql -y #here installing
+then
+    echo "MySQL is not installed...going to install"
+    dnf install mysql -y
     if [ $? -ne 0 ]
     then
-        echo "mysql installation is not success...check it"
+        echo "MySQL installation is failure..please check"
         exit 1
-    else 
-        echo "mysql installation is success"    
+    else
+        echo "MySQL installation is success"
     fi
-else 
-    echo "mysql is already installed , nothing to do"
+else
+    echo "MySQL is already installed..nothing to do"
 fi
