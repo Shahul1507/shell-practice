@@ -2,13 +2,13 @@
 
 
 
-ech0 "1"
-ech0 "2"
-ech0 "3"
-ech0 "4"
-ech0 "5"
-ech0 "6"
-ech0 "7"
-ech0 "8"
-ech0 "9"
-ech0 "10"
+echo "1"
+echo "2"
+echo "3"
+echo "4"
+echo "5"
+echo "6"
+echo "7"
+echo "8"
+echo "9"
+echo "10"
